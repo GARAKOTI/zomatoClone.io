@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+/* navigation styling */
+header {
+  height: 60vh;
+  width: 100%;
+  background: url("./assets/headerImg.avif") center center/cover no-repeat;
+  position: relative;
+}
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  padding-top: 25px;
+}
+
+.navigation a {
+  color: aliceblue;
+  text-decoration: none;
+  padding-left: 30px;
+  padding-right: 40px;
+}
+.navigation-in ul {
+  display: flex;
+  list-style: none;
+}
+/* navigation center styling */
+.branding-search {
+  width: 50%;
+  height: 50%;
+  color: rgb(218, 222, 226);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.branding-search > h3 {
+  text-align: center;
+  margin: 10px;
+}
+.branding-search > img {
+  width: 40%;
+  height: 30%;
+  margin: 20px 30%;
+}
+.branding-search > h3 {
+  font-weight: 900;
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+/* Search and location styling */
+.search-location {
+  width: 100%;
+  background-color: rgb(198, 199, 200);
+  height: 50px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  border: none;
+}
+.search-location .location > input {
+  width: 100%;
+  background-color: rgb(173, 174, 176);
+  height: 100%;
+  border: none;
+  outline: none;
+  padding-left: 10px;
+  color: aliceblue;
+}
+.search-location .location > input::placeholder {
+  color: black;
+  text-transform: uppercase;
+}
+
+.search-location .search > input {
+  width: 100%;
+  background-color: rgb(214, 221, 227);
+  height: 100%;
+  border: none;
+  outline: none;
+  padding-left: 10px;
+}
+
+body {
+  width: 100%;
+}
+#pageOne {
+  height: 100vh;
+  width: 100%;
+}
+#pageOne .Menu {
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 40px;
+}
+.Menu .card {
+  height: 100%;
+  width: 18%;
+  border: 1px solid rgb(198, 198, 198);
+  border-radius: 20px;
+  transition: all ease 0.2s;
+  scale: 0.9;
+}
+.card img {
+  border-radius: 10px 10px 0 0;
+  height: 22vh;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  overflow: hidden;
+  background-color: aqua;
+  position: relative;
+}
+.card a {
+  text-decoration: none;
+  color: black;
+}
+.card a > h3,
+p {
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+.card:hover {
+  scale: 1;
+  cursor: pointer;
+}
