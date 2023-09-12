@@ -25,7 +25,7 @@ header {
   text-decoration: none;
   padding-left: 30px;
   padding-right: 40px;
-  font-size: 25px;
+  font-size: 22px;
 }
 .navigation-in ul {
   display: flex;
@@ -92,12 +92,12 @@ header {
   padding-left: 10px;
 }
 .search-location .search > input::placeholder {
-    color: black;
-    text-transform: uppercase;
-    font-size: 15px;
-    font-weight: 900;
-    opacity: 0.5;
-  }
+  color: black;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 900;
+  opacity: 0.5;
+}
 
 body {
   width: 100%;
@@ -129,7 +129,6 @@ body {
   object-fit: cover;
   object-position: center;
   overflow: hidden;
-  background-color: aqua;
   position: relative;
 }
 .card a {
@@ -146,3 +145,59 @@ p {
   scale: 1;
   cursor: pointer;
 }
+#collection>h1{
+  margin: 5% 0px 10px 23%;
+  
+}
+.headding-section{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 15px;
+  padding-left: 10%;
+}
+.headding-section a{
+  color: rgb(255, 6, 6);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+ 
+}
+.collection-card{
+  height: 30vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.collection-card .card{
+  width: 12.5%;
+  height: 100%;
+  border-radius: 5px;
+  position: relative;
+  background-color: red;
+  
+}
+.collection-card .card>img{
+  height: 100%;
+  border-radius: 5px;
+  object-fit: cover;
+  object-position: center;
+  filter: blur(0.9px);
+  overflow: hidden;
+}
+.collection-card .card>h4{
+  position: absolute;
+  background-color: transparent;
+  color:white;
+  bottom: 5%;
+  left: 5%;
+  font-weight: 200;
+  
+}
+
